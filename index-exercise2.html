@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form</title>
+</head>
+
+<body>
+  <a href="index.html" class="home-link">Back to Home</a>
+
+  <head>
+    <style>
+      .home-link {
+        display: inline-block;
+        margin: 20px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        background-color: rgb(0, 133, 69);
+        padding: 10px;
+      }
+
+      .home-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <h1> BOOK YOUR APPOINTMENT TODAY </h1>
+
+  <form action="#" id="appointmentForm" method="POST" style="border: 4px solid rgba(80, 78, 82, 0.252); padding: 30px;">
+
+
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="John Doe" required aria-describedby="nameError">
+    <br>
+    <small id="nameError" style="display:none;">Enter your full name to continue.</small>
+    <br>
+
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="myemail@gmail.com" required>
+    <br><br>
+
+
+
+    <div style="display: none;">
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+      <br><br>
+
+      <label for="confirm">Confirm Password:</label><br>
+      <input type="password" id="confirm" name="confirm" minlength="8" maxlength="20" required>
+      <br><br>
+    </div>
+
+
+
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      minlength="10" maxlength="12" required title="Enter phone number in 123-456-7890 format"
+      aria-describedby="phoneError">
+    <br>
+    <small id="phoneError" style="display:none;">Enter a phone number in 123-456-7890 format.</small>
+    <br>
+
+
+    <fieldset style="width: 500px;">
+      <legend>Gender:</legend>
+
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" value="other">
+      <label for="other">Other (please specify)</label>
+      <input type="text" name="otherGender">
+      <label for="Gender" required></label>
+
+    </fieldset>
+    <br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+
+
+    <h4>Other Information</h4>
+
+    <p>Are you a new patient?</p>
+    <input type="radio" name="patientType" id="yes" value="yes">
+    <label for="yes">Yes</label><br>
+
+    <input type="radio" name="patientType" id="no" value="no" title="Yes or No is required to proceed">
+    <label for="no">No</label><br>
+
+
+
+    <h4>Are you having any symptoms?</h4>
+    <input type="checkbox" id="fever" name="symptoms" value="Fever">
+    <label for="fever">Fever</label>
+    <input type="checkbox" id="Cough" name="symptoms" value="Cough">
+    <label for="Cough">Cough</label>
+    <input type="checkbox" id="Headache" name="symptoms" value="Headache">
+    <label for="Headache">Headache</label>
+    <input type="checkbox" id="stomachPain" name="symptoms" value="stomachPain">
+    <label for="stomachPain">Stomach pain</label>
+    <input type="checkbox" id="Fatigue" name="symptoms" value="Fatigue">
+    <label for="Fatigue">Fatigue</label>
+    <input type="checkbox" id="chestPain" name="symptoms" value="chestPain">
+    <label for="chestPain">Chest pain</label><br>
+
+
+    <h4>Other reason for your Appointment</h4>
+    <label for="reason">Please explain:</label><br>
+    <textarea id="reason" name="reason" rows="5" cols="70" maxlength="200"></textarea>
+    <br><br>
+
+
+    <label for="preferredTime">Preferred Appointment Time</label>
+    <select id="preferredTime" name="preferredTime" required>
+      <option value="">**Select a time**</option>
+      <option value="morning">Morning (9AM - 11:30AM)</option>
+      <option value="afternoon">Afternoon (12PM - 3PM)</option>
+      <option value="evening">Evening (4PM - 6:30PM)</option>
+    </select>
+    <br><br>
+
+    <label>
+      <input type="checkbox" name="consent" required>
+      I certify that the information I have provided is correct, and I consent to this clinic accessing it.
+    </label>
+    <br><br>
+
+
+
+
+    <input type="submit" value="Submit">
+
+
+
+  </form>
+
+</body>
+
+</html>
