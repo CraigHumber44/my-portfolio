@@ -18,243 +18,142 @@
         <div class="header-box">
             <img src="header.jpg" alt="Header Image">
             <div class="header-content">
-                <h1>Idaeho Craig Osakpamwan</h1>
-                <p class="subheading">- Class Of Humber College | SID: N01774056 - </p>
+                <h1>Craig Osakpamwan</h1>
+                <p class="subheading">- Humber College: Web Programming and Design - </p>
                 <!-- <button class="header-button">Learn More</button> -->
             </div>
 
         </div>
 
-        <a href="index.html" class="home-link">Back to Home</a>
+        <!-- dropdown menu -->
+        <section>
+            <div class="flexbox">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">PORTFOLIO <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
 
-        <h1> Let's Connect! </h1>
+                            <!--  Dropdown 4 Assignment 1 -->
+                            <li class="dropdown">
+                                <a href="#">Assignment 1 <span class="arrow">➔</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="index-assignment1.html">Basic Webpage with HTML</a></li>
+                                </ul>
+                            </li>
 
+                            <!--  Dropdown 4 Exercise 2  -->
+                            <li class="dropdown">
+                                <a href="#">Exercise 2 <span class="arrow"> ➔</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="index-exercise2.html">Build an Accessible User Registration Form</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-        <form action="#" id="appointmentForm" method="POST">
+                            <!-- Exercise 3 Dropdown  -->
+                            <li class="dropdown">
+                                <a href="#">Exercise 3 <span class="arrow">➔</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="index-exercise3.html">CSS Fundamentals - Styling and Layout</a></li>
+                                </ul>
+                            </li>
 
+                            <!-- Return Home Click-->
+                            <li><a href="index.html">HOME</a></li>
 
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="John Doe" required aria-describedby="nameError">
-            <br>
-            <small id="nameError" style="display:none;">Enter your full name to continue.</small>
-            <br>
-
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="myemail@gmail.com" required>
-            <br><br>
-
-
-
-            <div style="display: none;">
-
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
-                <br><br>
-
-                <label for="confirm">Confirm Password:</label><br>
-                <input type="password" id="confirm" name="confirm" minlength="8" maxlength="20" required>
-                <br><br>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+        </section>
 
 
 
 
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                minlength="10" maxlength="12" required title="Enter phone number in 123-456-7890 format"
-                aria-describedby="phoneError">
-            <br>
-            <small id="phoneError" style="display:none;">Enter a phone number in 123-456-7890 format.</small>
-            <br>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+
+    <h1> Let's Connect! </h1>
 
 
-            <h4>Fill out the information below and enter your message, questions, or suggestions; I’ll get back to you
-                promptly.</h4><br>
-            <textarea id="reason" name="reason" rows="5" cols="70" maxlength="850" style="width: 100%;"></textarea>
+    <form action="submitForm" id="submitForm" method="POST">
+
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="John Doe" required aria-describedby="nameError">
+        <br>
+        <small id="nameError" style="display:none;">Enter your full name to continue.</small>
+        <br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="myemail@gmail.com" required>
+        <br><br>
+
+
+
+        <div style="display: none;">
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
             <br><br>
 
+            <label for="confirm">Confirm Password:</label><br>
+            <input type="password" id="confirm" name="confirm" minlength="8" maxlength="20" required>
             <br><br>
-
-
-            <input type="submit" value="Submit" ;><br><br>
-
-
-        </form>
-
-
-        <footer class="footerImage">
-            <div class="subscriptionBox">
-                <label for="Subscribe"></label>
-                <p>
-                <h4>Subscribe to Be The First To Know When I Upload New Projects:</h4>
-                </p>
-                <input type="email" id="Subscribe" name="Subscribe" placeholder="Enter your email" pattern="@" required>
-                <button type="submit">Subscribe</button>
-                <br><br><br><br><br>
-                <h3>© 2025 Idaeho Craig Osakpamwan. All rights reserved.</h3>
-            </div>
-        </footer>
+        </div>
 
 
 
 
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            minlength="10" maxlength="12" required title="Enter phone number in 123-456-7890 format"
+            aria-describedby="phoneError">
+        <br>
+        <small id="phoneError" style="display:none;">Enter a phone number in 123-456-7890 format.</small>
+        <br>
 
-        <!-- CSS -->
 
-        <head>
-            <style>
-                body {
-                    font-family: Arial, Helvetica, sans-serif;
-                    background-color: aliceblue;
-                    padding: 0px;
-                    margin: 0;
+        <h4 style="font-family: sans-serif; font-size: medium; font-weight: normal;">Fill out the information below and
+            enter your message, questions, or suggestions; I’ll get back to you
+            promptly.</h4><br>
+        <textarea id="reason" name="reason" rows="5" cols="70" maxlength="850" style="width: 100%;"></textarea>
+        <br><br>
 
-                }
+        <br><br>
 
-                /* back to home link */
-                .home-link {
-                    display: inline-block;
-                    margin: 20px;
-                    font-size: 16px;
-                    text-decoration: none;
-                    color: #ffffff;
-                    font-weight: bold;
-                    background-color: rgb(0, 133, 69);
-                    padding: 10px;
-                }
 
-                .home-link:hover {
-                    text-decoration: underline;
-                }
+
+        <input type="send" value="Send" ;><br><br>
+
+
+
+    </form><br><br><br>
+
+
+    <footer class="footerImage">
+        <div class="subscriptionBox">
+            <label for="Subscribe"></label>
+            <p>
+            <h4>Subscribe to Be The First To Know When I Upload New Projects:</h4>
+            </p>
+            <input type="email" id="Subscribe" name="Subscribe" placeholder="Enter your email" pattern="@" required>
+            <button type="submit">Subscribe</button>
+            <br><br><br><br><br>
+            <h3>© 2025 Idaeho Craig Osakpamwan. All rights reserved.</h3>
+        </div>
+    </footer>
 
 
 
 
 
-                h1 {
-                    font-family: Arial;
-                    font-style: bold;
-                    font-size: 40px;
-                    padding-top: 30px;
-                    padding-bottom: 50px;
-                    text-align: center;
-
-                }
-
-
-                form {
-                    background-color: rgb(240, 237, 225);
-                    padding: 50px;
-                    border: 4px solid rgba(62, 39, 10, 0.492);
-                    border-radius: 10px;
-                    width: 650px;
-                    margin: 0 auto;
-
-
-                }
-
-
-                input[type="email"],
-                input[type="tel"],
-                input[type="text"] {
-                    width: 70%;
-                    padding: 10px;
-                    margin: 10px 0;
-                    border: 1px solid slategray;
-                    box-sizing: border-box;
-
-                }
-
-                input[type="submit"] {
-                    background-color: rgb(10, 114, 2);
-                    color: white;
-                    border: none;
-                    border-radius: 2px;
-                    cursor: pointer;
-                    width: 100%;
-                    padding: 10px;
-                    align-items: center;
-                    font-size: 20px;
-                    transition: transform 0.5s ease, background-color 0.5s ease;
-
-
-                }
-
-                input[type="submit"]:hover {
-                    background-color: rgb(15, 103, 103);
-                    display: flexbox;
-                    flex-wrap: wrap;
-                    transform: scale(1.02);
-                }
-
-
-                textarea {
-                    max-width: 100%;
-                    resize: none;
-                }
-
-
-                footer h4 {
-                    font-family: 'Arial Narrow';
-                    margin-top: 100px;
-                    text-align: center;
-                    color: #ffffff;
-                    padding-top: 50px;
-                    margin-bottom: 20px;
-                    font-weight: normal;
-                    font-size: 20px;
-
-                }
-
-                .subscriptionBox {
-
-                    background-color: rgba(255, 255, 255, 0.85);
-                    text-align: center;
-                    width: 100%;
-                    height: 300px;
-                    margin: 0;
-                    background-image: url("footer.jpg");
-                }
-
-                .subscriptionBox input[type="email"] {
-                    padding: 10px;
-                    width: 40%;
-                    margin-top: 10px;
-
-                }
-
-
-
-                .subscriptionBox button {
-                    padding: 10px 30px;
-                    margin-left: 6px;
-                    background-color: #098735;
-                    color: white;
-                    border: none;
-                    border-radius: 2px;
-                    cursor: pointer;
-                    transition: transform 0.5s ease, background-color 0.5s ease;
-                }
-
-                .subscriptionBox button:hover {
-                    background-color: rgb(15, 103, 103);
-                    transform: scale(1.02);
-
-                }
-
-                h3 {
-                    font-family: 'Arial Narrow';
-                    text-align: justify;
-                    color: #ffffff;
-                    font-weight: normal;
-                    word-spacing: 20%;
-                    padding-left: 20px;
-                    font-size: 14px;
-
-
-                }
-            </style>
-        </head>
 
 </body>

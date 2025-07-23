@@ -24,35 +24,61 @@
 
 
 
-    <!-- This is the header image -->
+    <!-- The header image -->
     <div class="header-box">
       <img src="header.jpg" alt="Header Image">
       <div class="header-content">
-        <h1>Idaeho Craig Osakpamwan</h1>
-        <p class="subheading">- Class Of Humber College | SID: N01774056 - </p>
+        <h1>Craig Osakpamwan</h1>
+        <p class="subheading">- Humber College: Web Programming and Design - </p>
         <!-- <button class="header-button">Learn More</button> -->
       </div>
 
     </div>
 
 
-    <!-- dropdown menu -->
 
+
+    <!-- dropdown menu -->
     <section>
       <div class="flexbox">
         <ul>
           <li class="dropdown">
-            <a href="#">CATALOGUES <span class="arrow">▼</span></a>
+            <a href="#">PORTFOLIO <span class="arrow">▼</span></a>
             <ul class="dropdown-menu">
-              <li><a href="index-assignment1.html">Assignment 1</a></li>
-              <li><a href="index-exercise2.html">Exercise 2</a></li>
-              <li><a href="index-exercise3.html">Exercise 3</a></li>
+
+              <!--  Dropdown 4 Assignment 1 -->
+              <li class="dropdown">
+                <a href="#">Assignment 1 <span class="arrow">➔</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="index-assignment1.html">Basic Webpage with HTML</a></li>
+                </ul>
+              </li>
+
+              <!--  Dropdown 4 Exercise 2  -->
+              <li class="dropdown">
+                <a href="#">Exercise 2 <span class="arrow"> ➔</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="index-exercise2.html">Build an Accessible User Registration Form</a></li>
+                </ul>
+              </li>
+
+              <!-- Exercise 3 Dropdown  -->
+              <li class="dropdown">
+                <a href="#">Exercise 3 <span class="arrow">➔</span></a>
+                <ul class="dropdown-submenu">
+                  <li><a href="index-exercise3.html">CSS Fundamentals - Styling and Layout</a></li>
+                </ul>
+              </li>
+
+              <!-- Return Home Click-->
               <li><a href="index.html">HOME</a></li>
+
             </ul>
           </li>
         </ul>
       </div>
     </section>
+
 
 
 
@@ -66,7 +92,7 @@
   <br>
   <br>
   <br>
-  <br>
+  <br><br><br>
 
 
   <!-- my work grid -->
@@ -116,7 +142,8 @@
       </p><br>
       <h4 style="font-size: large;">Contact Me For Inquiries, Questions, Or Suggestion:</h4> <br>
       <div class="absolute-btn">
-        <a href="contact.html" class="contact-button">Contact Me</a>
+        <button class="contact-button" onclick="location.href='contact.html'">Contact Me</button>
+        <br><br>
       </div>
 
     </div>
